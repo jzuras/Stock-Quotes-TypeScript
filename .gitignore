@@ -1,0 +1,11 @@
+api-key
+.vscode/launch.json
+.vscode/tasks.json
+out/main.js.map
+out/modules/getStockQuote.js.map
+out/modules/getTimeSeriesQuote.js.map
+out/modules/stockChart.js.map
+out/modules/generatedCode/TwelveDataError.js.map
+out/modules/generatedCode/TwelveDataQuote.js.map
+out/modules/generatedCode/TwelveDataQuoteExtendedHours.js.map
+out/modules/generatedCode/TwelveDataTimeSeries.js.map

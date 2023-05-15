@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Quotes</title>
+    <link rel="stylesheet" href="main.css">
+    <script type="module" src="out/main.js"></script>
+  </head>
+  <body>
+    <h1>Stock Quotes</h1>
+    <form id="frmQuotes">
+      <div id="divApikey">
+        <label for="apikey">Enter Apikey for TwelveData:</label>
+        <input type="text" name="apikey" id="inputApikey">
+        <button id="btnApikey" type="submit">Add Apikey</button>
+      </div>
+      <p></p>
+      <div id="divStockSymbol" hidden>
+        <label for="stockSymbol">Enter a Stock Symbol:</label>
+        <input type="text" name="stockSymbol" id="inputStockSymbol">
+        <button id="btnGetQuote" type="submit">Add Quote for Stock</button>
+      </div>
+    </form>
+
+    <p></p>
+
+    <table id="tblQuotes" hidden>
+      <thead align="left" >
+      <tr>
+          <th>Stock Symbol</th>
+          <th>Company Name</th>
+          <th>Current Quote</th>
+          <th>Time of Quote</th>
+          <th>Show in Chart</th>
+          <th>Refresh (30 Sec)</th>
+          <th>Delete from List</th>
+      </tr>
+      </thead>
+      <tbody id="tbodyQuotes">
+      </tbody>
+
+    </table>
+
+    <div id="divChart" hidden>
+      <p>Daily Price Chart <label id='lblCurrentChartSymbol'></label></p>
+      <canvas id="stockChart" ></canvas>
+    </div>
+
+  </body>
+</html>
+<!DOCTYPE html>
