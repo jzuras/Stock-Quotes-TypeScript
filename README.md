@@ -14,9 +14,10 @@ Unfortunately, the way it handles unexpected data is to throw errors.
 Combined with the variation of JSON data from TwelveData, this makes
 for some messy code, with lots of try-catch blocks, including nesting them.
 
-I have chosed to put the generated JS files here under Git. My reason is that
-I want to be able to run this code with Pages. As I write this, I don't know if this works.
+I have chosen to put the generated JS files here under Git. My reason is that
+I want to be able to run this code with Pages. 
 
 As with the original JS project, the api key for TwelveData is not included in the code,
-and therefore needs to be entered by the user. If this does run under Pages,
-I can provide that info for any recruiters that might want to try it out.
+and therefore needs to be entered by the user. To run under Pages,
+I can provide the api key for any recruiters that might want to try it out. 
+There is also a new TS version that uses my Azure Function and does not require the api key.
